@@ -1,0 +1,15 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run Git",
+			"type": "shell",
+			"command": "node fix2.js && git add . && git commit -m \"Updates\" && git push -u origin main -f"
+		},
+		{
+			"label": "RunUpdates",
+			"type": "shell",
+			"command": "node fix2.js ; git add . ; git commit -m \"Updates\" ; git push -u origin main -f"
+		}
+	]
+}
